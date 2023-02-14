@@ -1,0 +1,29 @@
+<div class="calculator">
+    <h2>Calculatrice</h2>
+  
+    <div class="container">
+        <div class="button-container">
+          <button (click)="generateRandomNumbers()"></button>
+        </div>
+        <div class="text-container">
+          Générer des nombres aléatoires
+        </div>
+      </div>
+      
+  
+    <div class="random-numbers">
+      <h3>{{randomNumber1}}</h3>
+      <h3>{{operator}}</h3>
+      <h3>{{randomNumber2}}</h3>
+      <h3>=</h3>
+      <h3>{{result}}</h3>
+    </div>
+  
+    <div class="operators">
+      <button (click)="add()">+</button>
+      <button (click)="subtract()">-</button>
+      <button (click)="multiply()">*</button>
+      <button (click)="divide()">/</button>
+    </div>
+  </div>
+  
